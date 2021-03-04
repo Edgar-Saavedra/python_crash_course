@@ -1,3 +1,4 @@
+import pygame
 class Ship:
   """A class to manage the ship."""
 
@@ -9,6 +10,7 @@ class Ship:
     # Load the ship image and get its rect (size)
     self.image = pygame.image.load('images/ship.bmp')
     self.rect = self.image.get_rect()
+    self.rect.midbottom = self.screen_rect.midbottom
   
   def blitme(self):
     """Draw the ship at its current location"""
