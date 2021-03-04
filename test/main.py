@@ -19,3 +19,8 @@ if __name__ == '__main__':
     print(f"{person.fname} is from {person.country}")
     print("what you making for food?")
     print(person.make_food())
+
+  a = [1,2,3]
+  b = a
+  b[0] = 3
+  print(a)
